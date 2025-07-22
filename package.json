@@ -1,18 +1,16 @@
 {
-  "name": "vercel-app",
+  "name": "my-app",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && esbuild index.ts --bundle --platform=node --format=esm --outdir=dist",
-    "start": "node dist/index.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^5.2.0",
-    "esbuild": "^0.19.9",
-    "typescript": "^5.4.0"
-  },
-  "type": "module"
+    "typescript": "^5.4.0",
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.31",
+    "autoprefixer": "^10.4.16"
+  }
 }
