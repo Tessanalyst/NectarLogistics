@@ -1,0 +1,7 @@
+Separate rider and admin interfaces with role-based access control
+
+Implement role-based access control by creating RiderApp and AdminDashboard components and fixing customer signature field with Textarea component.
+
+Replit-Commit-Author: Agent
+Replit-Commit-Session-Id: ee0c7f8e-8d8d-429f-bc5f-d16f5798e6a0
+Replit-Commit-Screenshot-Url: https://storage.googleapis.com/screenshot-production-us-central1/bee72b88-94a2-4061-b264-8f429f818ff4/ee0c7f8e-8d8d-429f-bc5f-d16f5798e6a0/ytZLUdu
