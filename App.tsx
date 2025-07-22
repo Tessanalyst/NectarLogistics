@@ -1,0 +1,35 @@
+import { Switch, Route } from "wouter";
+import { queryClient } from "./lib/queryClient";
+import { QueryClientProvider } from "@tanstack/react-query";
+import { Toaster } from "@/components/ui/toaster";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import NotFound from "@/pages/not-found";
+import RoleSelector from "@/pages/role-selector";
+import RiderApp from "@/pages/rider-app";
+import AdminDashboard from "@/pages/admin-dashboard";
+import Reports from "@/pages/reports";
+
+function Router() {
+  return (
+    <Switch>
+      <Route path="/" component={RoleSelector} />
+      <Route path="/rider" component={RiderApp} />
+      <Route path="/admin" component={AdminDashboard} />
+      <Route path="/admin/reports" component={Reports} />
+      <Route component={NotFound} />
+    </Switch>
+  );
+}
+
+function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Router />
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+}
+
+export default App;
