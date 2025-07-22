@@ -1,8 +1,9 @@
-import { defineConfig } from 'vite';
+// vite.config.ts
+import { defineConfig } from 'vite'
 
 export default defineConfig({
-  root: '.', // root directory (same as where index.html is)
+  root: '.', // Current directory
   build: {
-    outDir: 'dist/client',
+    outDir: 'dist/client'
   }
-});
+})
